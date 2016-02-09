@@ -1,4 +1,10 @@
-{{#section.title}}{{model.name}}{{/section.title}}{{#section.body}}
+{{#section.title}}{{model.name}}{{/section.title}}{{#section.style}}
+    <style>
+      #recent_update > tbody > tr {
+        cursor: pointer;
+      }
+    </style>
+{{/section.style}}{{#section.body}}
     <main class="container">
       <div class="row">
         <h1>{{model.name}}</h1>
