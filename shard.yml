@@ -1,0 +1,15 @@
+name: kemal-crustache-example
+version: 0.1.0
+
+authors:
+  - TSUYUSATO Kitsune <make.just.on@gmail.com>
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: sdogruyol/kemal
+    branch: master
+  crustache:
+    github: MakeNowJust/crustache
+    branch: master

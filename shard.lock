@@ -1,0 +1,14 @@
+version: 1.0
+shards:
+  crustache:
+    github: MakeNowJust/crustache
+    commit: ec599a581415a8866fc3cb4dbfdd7dc651ec5739
+
+  kemal:
+    github: sdogruyol/kemal
+    commit: 70ef8a771872e8efdb9d1379c3761f16e4c51f71
+
+  radix:
+    github: luislavena/radix
+    version: 0.1.0
+
