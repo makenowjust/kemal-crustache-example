@@ -1,0 +1,20 @@
+{{#section.title}}{{model.entry.title}} - {{model.wiki.name}}{{/section.title}}{{#section.body}}
+    <main class="container">
+      <div class="row">
+        <h1>{{model.entry.title}}</h1>
+      </div>
+
+      <div class="row">
+        <pre>{{model.entry.body}}</pre>
+      </div>
+
+
+      <div class="row">
+        <a class="btn btn-default" href="/edit?path={{model.entry.path_escape}}">Edit</a>
+      </div>
+
+      <div class="row">
+        <small>Created by {{model.entry.created_by}} at {{model.entry.created_at}}, updated by {{model.entry.updated_by}} at {{model.entry.updated_at}}</small>
+      </div>
+    </main>
+{{/section.body}}

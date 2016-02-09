@@ -1,0 +1,24 @@
+{{#section.title}}Edit {{model.path}} - {{model.wiki.name}}{{/section.title}}{{#section.body}}
+    <main class="container">
+      <div class="row">
+        <h1>Edit {{model.path}}</h1>
+      </div>
+
+      <form class="row" action="/edit" method="POST">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input name="title" type="text" class="form-control" value="{{model.entry.title}}">
+        </div>
+        <div class="form-group">
+          <label for="user">Your name</label>
+          <input name="user" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="body">Content</label>
+          <textarea name="body" class="form-control" rows="10">{{model.entry.body}}</textarea>
+        </div>
+        <input name="path" type="hidden" value="{{model.path}}">
+        <button type="submit" class="btn btn-default">{{#model.entry}}Update{{/model.entry}}{{^model.entry}}Create{{/model.entry}}</button>
+      </form>
+    </main>
+{{/section.body}}

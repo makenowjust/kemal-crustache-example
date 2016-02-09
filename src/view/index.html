@@ -1,0 +1,53 @@
+{{#section.title}}{{model.name}}{{/section.title}}{{#section.body}}
+    <main class="container">
+      <div class="row">
+        <h1>{{model.name}}</h1>
+      </div>
+
+      <div class="row">
+        <form class="input-group" id="go">
+          <input class="form-control" type="text" id="path" placeholder="page/path/here"></input>
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">Go</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3>Recently updated pages</h1>
+      </div>
+
+      <div class="row">
+        <table class="table table-hover" id="recent_update">
+          <thead>
+            <th>path</th>
+            <th>title</th>
+            <th>at</th>
+            <th>by</th>
+          </thead>
+          <tbody>{{#model.recent_update_entries}}
+            <tr>
+              <td>{{path}}</td>
+              <td>{{title}}</td>
+              <td>{{updated_at_format}}</td>
+              <td>{{updated_by}}</td>
+            </tr>
+            {{/model.recent_update_entries}}</tbody>
+        </table>
+      </div>
+    </main>
+{{/section.body}}{{#section.script}}
+    <script>
+      document.querySelector('#go').addEventListener('submit', e => {
+        e.preventDefault()
+        location.href = document.querySelector('#path').value
+      })
+      Array
+        .from(document.querySelectorAll('#recent_update > tbody > tr'))
+        .forEach(tr => {
+          tr.addEventListener('click', () => {
+            location.href = tr.querySelector('td').textContent
+          })
+        })
+    </script>
+{{/section.script}}
