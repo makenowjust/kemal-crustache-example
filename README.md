@@ -24,7 +24,7 @@ release build, compiling and bundled view files with executable
 $ crystal build --release src/kemal-crustache-example.cr
 
 Run!!
-$ ./kemal-crustache-example && open http://localhost:3000/
+$ ./kemal-crustache-example & open http://localhost:3000/
 ```
 
 ## Contributing
