@@ -2,6 +2,10 @@
 
 Simple wiki with kemal and crustache
 
+Demo: <https://kemal-crustache-example.herokuapp.com/>
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 ## Install and Run
 
 ```console

@@ -1,0 +1,15 @@
+{
+  "name": "kemal-crustache-example",
+  "description": "Simple wiki with kemal and crustache",
+  "keywords": [
+    "crystal",
+    "kemal",
+    "crustache",
+    "mustache"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/zamith/heroku-buildpack-crystal.git"
+    }
+  ]
+}
