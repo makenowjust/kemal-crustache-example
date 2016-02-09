@@ -1,0 +1,32 @@
+{
+  "name": "kemal-crustache-example",
+  "entries": {
+    "/hello": {
+      "path": "/hello",
+      "title": "Hello, World!!",
+      "body": "Hello, World!!\r\n\r\nThis wiki (?)'s source codes are https://github.com/MakeNowJust/kemal-crustache-example.\r\n\r\nYou can edit and create pages, however please follow common sense ;)\r\n\r\nAuthor: TSUYUSATO Kitsune <make.just.on@gmail.com>",
+      "created_by": "MakeNowJust",
+      "created_at": "2016-02-09 16:14:28",
+      "updated_by": "MakeNowJust",
+      "updated_at": "2016-02-09 16:19:02"
+    },
+    "/library/kemal": {
+      "path": "/library/kemal",
+      "title": "kemal",
+      "body": "Lightning Fast, Super Simple micro web framework written in Crystal programming language. \r\nInspired by Sinatra.\r\n\r\nURL: http://kemalcr.com/",
+      "created_by": "MakeNowJust",
+      "created_at": "2016-02-09 16:16:20",
+      "updated_by": "MakeNowJust",
+      "updated_at": "2016-02-09 16:16:20"
+    },
+    "/library/crustache": {
+      "path": "/library/crustache",
+      "title": "crustache",
+      "body": "{{Mustache}} for Crystal\r\n\r\nURL: https://github.com/MakeNowJust/crustache",
+      "created_by": "MakeNowJust",
+      "created_at": "2016-02-09 16:17:03",
+      "updated_by": "MakeNowJust",
+      "updated_at": "2016-02-09 16:17:03"
+    }
+  }
+}
