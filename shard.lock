@@ -2,7 +2,7 @@ version: 1.0
 shards:
   crustache:
     github: MakeNowJust/crustache
-    commit: ec599a581415a8866fc3cb4dbfdd7dc651ec5739
+    commit: 8d9bff64c24ec560d85dd4eb2b829b81215a7181
 
   kemal:
     github: sdogruyol/kemal
