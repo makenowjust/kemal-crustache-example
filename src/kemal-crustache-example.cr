@@ -8,15 +8,16 @@ require "kemal"
 
 # When release build, loading template on compile time,
 # otherwise loading dynamically.
-loader :: Crustache::FileSystem
+loader = begin
 {% begin %}
   {% view = "src/view" %}
   ifdef release
-    loader = Crustache.loader_static {{ view }}
+    Crustache.loader_static {{ view }}
   else
-    loader = Crustache.loader {{ view }}
+    Crustache.loader {{ view }}
   end
 {% end %}
+end
 
 $engine = Crustache::Engine.new loader
 
